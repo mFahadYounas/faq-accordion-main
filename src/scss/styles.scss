@@ -40,15 +40,17 @@ body {
   justify-content: flex-start;
   align-items: center;
   height: 600px;
+  padding: 30px;
 }
 
 .accordion-header {
   width: 100%;
   display: flex;
+  gap: 10px;
   align-items: center;
   justify-content: left;
   flex: 0.5;
-  border: 1px solid blue;
+  //   border: 1px solid blue;
 }
 
 .accordion-header > h1 {
