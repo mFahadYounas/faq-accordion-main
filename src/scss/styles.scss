@@ -32,6 +32,11 @@
 //   font-style: normal;
 // }
 
+$darkPurple: hsl(292, 42%, 14%);
+$grayishPurple: hsl(292, 16%, 49%);
+$lightPink: hsl(275, 100%, 97%);
+$white: hsl(0, 0%, 100%);
+
 * {
   margin: 0;
   padding: 0;
@@ -42,7 +47,7 @@
 html {
   height: 100%;
   width: 100dvw;
-  background-color: hsl(275, 100%, 97%);
+  background-color: $lightPink;
 }
 
 body {
@@ -67,13 +72,13 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 700px;
-  background-color: hsl(0, 0%, 100%);
+  width: 650px;
+  background-color: $white;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 600px;
+  height: 740px;
   padding: 40px;
   border-radius: 20px;
 }
@@ -85,7 +90,8 @@ body {
   align-items: center;
   justify-content: left;
   flex: 0.5;
-  //   border: 1px solid blue;
+  color: $darkPurple;
+  margin-bottom: 20px;
 }
 
 .accordion-header > h1 {
@@ -93,14 +99,27 @@ body {
   font-weight: bold;
 }
 
+.qna {
+  border-bottom: 1px solid $lightPink;
+  margin-top: 10px;
+  width: 100%;
+  &:last-of-type {
+    border-bottom: none;
+  }
+}
+
 .question {
   width: 100%;
   height: 50px;
   display: flex;
   justify-content: space-between;
-  // border: 1px solid black;
+  color: $darkPurple;
+  margin-bottom: 10px;
   button {
     // font-family: Work-Sans;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-size: 16px;
     font-weight: 600;
     outline: none;
@@ -109,11 +128,21 @@ body {
     // width: 100%;
     height: 100%;
     text-align: left;
-    // border: 1px solid black;
+    flex: 1;
     cursor: pointer;
   }
   span {
-    // border: 1px solid black;
     display: flex;
+    cursor: pointer;
   }
+}
+
+.answer {
+  text-align: justify;
+  color: $grayishPurple;
+  margin-bottom: 20px;
+}
+
+.hidden {
+  display: none;
 }
