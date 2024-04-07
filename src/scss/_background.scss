@@ -1,0 +1,11 @@
+.background-pattern-container {
+  width: 100%;
+  height: 40%;
+}
+
+.background-pattern-container > img {
+  height: 100%;
+  width: 100dvw;
+  margin: 0;
+  object-fit: cover;
+}

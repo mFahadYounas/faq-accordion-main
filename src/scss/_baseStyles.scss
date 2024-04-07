@@ -1,0 +1,19 @@
+@import "baseColors";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Work-Sans, sans-serif;
+}
+
+html {
+  height: 100%;
+  width: 100dvw;
+  background-color: $lightPink;
+}
+
+body {
+  height: 100%;
+  width: 100dvw;
+}
