@@ -19,9 +19,8 @@ const allQna: qnaType[] = [
   },
   {
     question: "Can I use Frontend Mentor projects in my portfolio?",
-    answer: `Yes, Frontend Mentor offers both free and premium coding
-             challenges, with the free option providing access to a range of
-             projects suitable for all skill levels.`,
+    answer: `Yes, you can use projects completed on Frontend Mentor in your portfolio. 
+             It's an excellent way to showcase your skills to potential employers!`,
   },
   {
     question: "How can I get help if I'm stuck on a Frontend Mentor challenge?",
@@ -33,7 +32,7 @@ const allQna: qnaType[] = [
 
 const makeQna = (qText: string, aText: string) => {
   const accordionBody = document.querySelector(".accordion-body");
-  const qna = document.createElement("section");
+  const qna = document.createElement("li");
   qna.classList.add("qna");
   // question section
   const question = document.createElement("section");

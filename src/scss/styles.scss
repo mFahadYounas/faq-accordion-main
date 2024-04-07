@@ -103,12 +103,14 @@ body {
 
 .accordion-body {
   width: 100%;
+  list-style-type: none;
 }
 
 .qna {
   border-bottom: 1px solid $lightPink;
   margin-top: 10px;
   width: 100%;
+  text-decoration: none;
   &:last-of-type {
     border-bottom: none;
   }
