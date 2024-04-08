@@ -7,6 +7,7 @@ export const makeQna = (qText: string, aText: string) => {
   question.classList.add("question");
   const qButton = document.createElement("button");
   qButton.textContent = qText;
+  qButton.tabIndex = 0;
   const expandSpan = document.createElement("span");
   const expandImg = document.createElement("img");
   expandImg.src = "./src/assets/images/icon-plus.svg";
