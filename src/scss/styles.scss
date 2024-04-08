@@ -55,7 +55,6 @@
   display: flex;
   justify-content: space-between;
   color: $darkPurple;
-  margin-bottom: 10px;
   button {
     display: flex;
     justify-content: space-between;
@@ -82,9 +81,14 @@
 .answer {
   text-align: justify;
   color: $grayishPurple;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  p {
+    margin-bottom: 20px;
+  }
 }
 
 .hidden {
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
 }
