@@ -2,12 +2,17 @@
 @import "background";
 @import "baseStyles";
 
+$headerFontSize: 52px;
+$questionFontSize: 16px;
+
 .accordion {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 650px;
+  width: auto;
+  min-width: 310px;
+  max-width: 650px;
   background-color: $white;
   display: flex;
   flex-direction: column;
@@ -29,7 +34,7 @@
   color: $darkPurple;
   margin-bottom: 20px;
   h1 {
-    font-size: 52px;
+    font-size: $headerFontSize;
     font-weight: bold;
   }
 }
@@ -41,7 +46,8 @@
 
 .qna {
   border-bottom: 1px solid $lightPink;
-  margin-top: 10px;
+  padding: 10px;
+  // margin-top: 10px;
   width: 100%;
   text-decoration: none;
   &:last-of-type {
@@ -59,7 +65,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 16px;
+    font-size: $questionFontSize;
     font-weight: 600;
     outline: none;
     background: none;
@@ -75,13 +81,14 @@
   span {
     display: flex;
     cursor: pointer;
+    // height: 40px;
   }
 }
 
 .answer {
   text-align: justify;
   color: $grayishPurple;
-  margin-bottom: 10px;
+  // margin-bottom: 10px;
   p {
     margin-bottom: 20px;
   }
@@ -92,3 +99,47 @@
   overflow: hidden;
   transition: max-height 0.5s ease;
 }
+
+@media screen and (max-width: 768px) {
+  .accordion {
+    padding: 10px 10px 10px 10px;
+    justify-content: space-around;
+  }
+  .accordion-header {
+    margin-bottom: 0px;
+    h1 {
+      font-size: calc($headerFontSize/1.3);
+    }
+  }
+  .question > button {
+    font-size: calc($questionFontSize/1.3);
+    span:first-of-type {
+      max-width: 80%;
+      height: auto;
+    }
+    span {
+      height: 25px;
+    }
+  }
+  .answer > p {
+    font-size: calc($questionFontSize/1.3);
+  }
+}
+
+// @media screen and (min-width: 481px) and (max-width: 768px) {
+//   .accordion {
+//     padding: 10px 10px 10px 10px;
+//   }
+//   .accordion-header > h1 {
+//     font-size: calc($headerFontSize/1.3);
+//   }
+//   .question > button {
+//     font-size: calc($questionFontSize/1.3);
+//     span {
+//       height: 25px;
+//     }
+//   }
+//   .answer > p {
+//     font-size: calc($questionFontSize/1.3);
+//   }
+// }

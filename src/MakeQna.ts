@@ -6,7 +6,9 @@ export const makeQna = (qText: string, aText: string) => {
   const question = document.createElement("section");
   question.classList.add("question");
   const qButton = document.createElement("button");
-  qButton.textContent = qText;
+  const qSpan = document.createElement("span");
+  qSpan.textContent = qText;
+  qButton.appendChild(qSpan);
   qButton.tabIndex = 0;
   const expandSpan = document.createElement("span");
   const expandImg = document.createElement("img");
