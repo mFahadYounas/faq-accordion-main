@@ -1,3 +1,5 @@
+import plusIcon from "./assets/images/icon-plus.svg";
+
 export const makeQna = (qText: string, aText: string) => {
   const accordionBody = document.querySelector(".accordion-body");
   const qna = document.createElement("li");
@@ -12,7 +14,7 @@ export const makeQna = (qText: string, aText: string) => {
   qButton.tabIndex = 0;
   const expandSpan = document.createElement("span");
   const expandImg = document.createElement("img");
-  expandImg.src = "./src/assets/images/icon-plus.svg";
+  expandImg.src = plusIcon;
   expandImg.alt = "plus icon";
   expandSpan.appendChild(expandImg);
   qButton.appendChild(expandSpan);
