@@ -10,7 +10,7 @@ export default defineConfig({
     sourcemap: true,
   },
   resolve: {
-    extensions: [".ts", ".js", ".scss"], // Add .scss to the list of extensions
+    extensions: [".ts", ".js", ".scss"],
   },
   server: {
     open: true,
