@@ -5,7 +5,7 @@ export const makeQna = (qText: string, aText: string) => {
   const qna = document.createElement("li");
   qna.classList.add("qna");
   // question section
-  const question = document.createElement("section");
+  const question = document.createElement("div");
   question.classList.add("question");
   const qButton = document.createElement("button");
   const qSpan = document.createElement("span");
@@ -22,7 +22,7 @@ export const makeQna = (qText: string, aText: string) => {
   qna.appendChild(question);
   accordionBody?.appendChild(qna);
   // answer section
-  const answer = document.createElement("section");
+  const answer = document.createElement("div");
   answer.classList.add("answer");
   answer.classList.add("hidden");
   const answerParagraph = document.createElement("p");
