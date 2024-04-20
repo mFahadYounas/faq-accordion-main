@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [FAQ Accordion GitHub](https://github.com/mFahadYounas/faq-accordion-main)
-- Live Site URL: [FAQ Accordion]
+- Live Site URL: [FAQ Accordion](https://mfahadyounas.github.io/faq-accordion-main/)
 
 ## My process
 
